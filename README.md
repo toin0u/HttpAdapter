@@ -20,10 +20,8 @@ $ curl -sS https://getcomposer.org/installer | php
 $ php composer.phar require toin0u/http-adapter:@stable
 ```
 
-Usage
------
-
-Currently, these following adapters are available:
+Available adapters
+------------------
 
 * `CurlHttpAdapter` to use [cURL](http://php.net/manual/book.curl.php).
 * `BuzzHttpAdapter` to use [Buzz](https://github.com/kriswallsmith/Buzz), a lightweight PHP 5.3 library for
@@ -32,6 +30,12 @@ issuing HTTP requests.
 for building RESTful web service clients.
 * `ZendHttpAdapter` to use [Zend Http Client](http://framework.zend.com/manual/2.0/en/modules/zend.http.client.html).
 * `SocketHttpAdapter` to use a [socket](http://www.php.net/manual/function.fsockopen.php).
+
+
+Contributing
+------------
+
+Please see [CONTRIBUTING](https://github.com/toin0u/HttpAdapter/blob/master/CONTRIBUTING.md) for details.
 
 
 Credits
@@ -44,7 +48,7 @@ Credits
 Acknowledgment
 --------------
 
-* [The almost missing Geocoder PHP library.](http://geocoder-php.org/)
+This set of adapters comes originally from the [Geocoder PHP library](http://geocoder-php.org/).
 
 
 Support
