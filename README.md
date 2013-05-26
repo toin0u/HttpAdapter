@@ -25,7 +25,7 @@ Usage
 
 Currently, these following adapters are available:
 
-* `CurlHttpAdapter` to use [cURL](http://php.net/manual/book.curl.php) - it's the default one.
+* `CurlHttpAdapter` to use [cURL](http://php.net/manual/book.curl.php).
 * `BuzzHttpAdapter` to use [Buzz](https://github.com/kriswallsmith/Buzz), a lightweight PHP 5.3 library for
 issuing HTTP requests.
 * `GuzzleHttpAdapter` to use [Guzzle](https://github.com/guzzle/guzzle), PHP 5.3+ HTTP client and framework
