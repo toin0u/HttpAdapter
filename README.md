@@ -32,6 +32,22 @@ for building RESTful web service clients.
 * `SocketHttpAdapter` to use a [socket](http://www.php.net/manual/function.fsockopen.php).
 
 
+Usage
+-----
+
+```php
+<?php
+
+require 'vendor/autoload.php';
+
+$adapter = new HttpAdapter\CurlHttpAdapter;
+$url     = 'http://ifconfig.me/ip';
+
+printf('IP: %s', $adapter->getContent($url)); // IP: 127.0.0.1
+
+```
+
+
 Contributing
 ------------
 
