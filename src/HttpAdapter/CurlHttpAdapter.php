@@ -26,6 +26,7 @@ class CurlHttpAdapter implements HttpAdapterInterface
     {
         $c = curl_init();
         curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($c, CURLOPT_FOLLOWLOCATION, 1);
         curl_setopt($c, CURLOPT_URL, $url);
         $content = curl_exec($c);
         curl_close($c);
