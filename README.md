@@ -24,6 +24,8 @@ $ php composer.phar require toin0u/http-adapter:@stable
 Usage
 -----
 
+TODO
+
 
 Credits
 -------
@@ -32,8 +34,9 @@ Credits
 * [All contributors](https://github.com/toin0u/HttpAdapter/contributors)
 
 
-Acknowledgments
----------------
+Acknowledgment
+--------------
+
 * [The almost missing Geocoder PHP library.](http://geocoder-php.org/)
 
 
