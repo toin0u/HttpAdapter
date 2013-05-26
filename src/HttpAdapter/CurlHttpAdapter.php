@@ -17,7 +17,7 @@ namespace HttpAdapter;
  * @author William Durand <william.durand1@gmail.com>
  * @author Antoine Corcy <contact@sbin.dk>
  */
-class CurlHttpAdapter implements \HttpAdapterInterface
+class CurlHttpAdapter implements HttpAdapterInterface
 {
     /**
      * {@inheritDoc}

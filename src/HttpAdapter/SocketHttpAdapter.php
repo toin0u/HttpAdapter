@@ -17,7 +17,7 @@ namespace HttpAdapter;
  * @author Markus Bachmann <markus.bachmann@bachi.biz>
  * @author Antoine Corcy <contact@sbin.dk>
  */
-class SocketHttpAdapter implements \HttpAdapterInterface
+class SocketHttpAdapter implements HttpAdapterInterface
 {
     /**
      * @var integer

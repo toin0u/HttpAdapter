@@ -21,7 +21,7 @@ use Guzzle\Service\Client;
  *
  * @link   http://www.guzzlephp.org
  */
-class GuzzleHttpAdapter implements \HttpAdapterInterface
+class GuzzleHttpAdapter implements HttpAdapterInterface
 {
     /**
      * {@inheritDoc}

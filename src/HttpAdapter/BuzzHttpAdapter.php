@@ -19,7 +19,7 @@ use Buzz\Browser;
  * @author William Durand <william.durand1@gmail.com>
  * @author Antoine Corcy <contact@sbin.dk>
  */
-class BuzzHttpAdapter implements \HttpAdapterInterface
+class BuzzHttpAdapter implements HttpAdapterInterface
 {
     /**
      * {@inheritDoc}
