@@ -5,6 +5,8 @@ This PHP 5.3+ library provides you simple HTTP adapters.
 
 [![Build Status](https://secure.travis-ci.org/toin0u/HttpAdapter.png)](http://travis-ci.org/toin0u/HttpAdapter)
 [![Coverage Status](https://coveralls.io/repos/toin0u/HttpAdapter/badge.png?branch=master)](https://coveralls.io/r/toin0u/HttpAdapter)
+[![Latest Stable Version](https://poser.pugx.org/toin0u/http-adapter/v/stable.png)](https://packagist.org/packages/toin0u/http-adapter)
+[![Total Downloads](https://poser.pugx.org/toin0u/http-adapter/downloads.png)](https://packagist.org/packages/toin0u/http-adapter)
 
 
 Installation
