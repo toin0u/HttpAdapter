@@ -15,11 +15,21 @@ Installation
 This library can be found on [Packagist](https://packagist.org/packages/toin0u/http-adapter).
 The recommended way to install this is through [composer](http://getcomposer.org).
 
-Run these commands to install composer, the library and its dependencies:
+Edit `compose.json` and add:
+
+```json
+{
+    "require": {
+        "toin0u/http-adapter": "~1.0"
+    }
+}
+```
+
+And install dependecies:
 
 ```bash
 $ curl -sS https://getcomposer.org/installer | php
-$ php composer.phar require toin0u/http-adapter:@stable
+$ php composer.phar install
 ```
 
 Available adapters
