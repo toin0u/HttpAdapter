@@ -20,6 +20,28 @@ namespace HttpAdapter;
 class CurlHttpAdapter implements HttpAdapterInterface
 {
     /**
+     * @var integer
+     */
+    private $connectionTimeout;
+
+    /**
+     * @var integer
+     */
+    private $timeout;
+
+    /**
+     * Constructor.
+     *
+     * @param integer $connectionTimeout cURL connection timeout in seconds (optional).
+     * @param integer $timeout           cURL timeout in seconds (optional).
+     */
+    public function __construct($connectionTimeout = null, $timeout = null)
+    {
+        $this->connectionTimeout = $connectionTimeout;
+        $this->timeout           = $timeout;
+    }
+
+    /**
      * {@inheritDoc}
      */
     public function getContent($url)
@@ -28,6 +50,15 @@ class CurlHttpAdapter implements HttpAdapterInterface
         curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($c, CURLOPT_FOLLOWLOCATION, 1);
         curl_setopt($c, CURLOPT_URL, $url);
+
+        if (is_int($this->connectionTimeout)) {
+            curl_setopt($c, CURLOPT_CONNECTTIMEOUT, $this->connectionTimeout);
+        }
+
+        if (is_int($this->timeout)) {
+            curl_setopt($c, CURLOPT_TIMEOUT, $this->timeout);
+        }
+
         $content = curl_exec($c);
         curl_close($c);
 

@@ -26,6 +26,15 @@ class CurlHttpAdapterTest extends \PHPUnit_Framework_TestCase
         $this->curl = new CurlHttpAdapter();
     }
 
+    public function testSetStringTimeouts()
+    {
+        new CurlHttpAdapter('foo', 'bar');
+    }
+    public function testSetIntegerTimeouts()
+    {
+        new CurlHttpAdapter(5, 10);
+    }
+
     public function testGetNullContent()
     {
         $this->assertNull($this->curl->getContent(null));
